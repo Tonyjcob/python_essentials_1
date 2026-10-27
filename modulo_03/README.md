@@ -13,6 +13,8 @@
 | 09 | `09_devorador_lindo.py` | 3.2.11 | ☐ |
 | 10 | `10_piramide.py` | 3.2.14 | ☐ |
 | 11 | `11_collatz.py` | 3.2.15 | ☐ |
+| 12 | `12_sombrero.py` | 3.4.6 | ☐ |
+| 13 | `13_beatles.py` | 3.4.11 | ☐ |
 
 ## 01 · Comparación sin if
 `01_mayor_igual_100.py` · sección 3.1.6
@@ -255,3 +257,47 @@ pasos = 62
 </details>
 
 > Los datos de prueba del curso tienen erratas (`46` repetido en vez de `23`; en `1023` faltan `520`, `112` y el `1` final). Estas salidas están comprobadas ejecutando el algoritmo.
+
+## 12 · Los fundamentos de las listas (sombrero)
+`12_sombrero.py` · sección 3.4.6
+
+Un sombrero contiene la lista `hat_list = [1, 2, 3, 4, 5]`. Escribe **una línea** para cada paso:
+
+1. Pide un entero al usuario y **sustituye el número central** de la lista por él.
+2. **Elimina el último** elemento de la lista.
+3. **Imprime la longitud** de la lista resultante.
+
+El archivo trae la lista y el `print(hat_list)` final.
+
+| Entrada | Salida |
+|---|---|
+| `10` | `4` + `[1, 2, 10, 4]` |
+| `-7` | `4` + `[1, 2, -7, 4]` |
+
+> Pista: el central de 5 elementos es el índice `2` (o `len(hat_list) // 2`).
+
+## 13 · Los fundamentos de las listas: los Beatles
+`13_beatles.py` · sección 3.4.11
+
+Reproduce los cambios de formación de los Beatles con una lista:
+
+1. Crea una lista vacía `beatles`.
+2. Con `append()`, añade `John Lennon`, `Paul McCartney` y `George Harrison`.
+3. Con un `for` + `append()`, pide al usuario que añada `Stu Sutcliffe` y `Pete Best`.
+4. Con `del`, elimina a `Stu Sutcliffe` y `Pete Best`.
+5. Con `insert()`, añade `Ringo Starr` **al principio**.
+
+El archivo trae los `print` de control de cada paso.
+
+Salida esperada (introduciendo `Stu Sutcliffe` y `Pete Best`):
+
+```
+Paso 1: []
+Paso 2: ['John Lennon', 'Paul McCartney', 'George Harrison']
+Paso 3: ['John Lennon', 'Paul McCartney', 'George Harrison', 'Stu Sutcliffe', 'Pete Best']
+Paso 4: ['John Lennon', 'Paul McCartney', 'George Harrison']
+Paso 5: ['Ringo Starr', 'John Lennon', 'Paul McCartney', 'George Harrison']
+Los Fab 4
+```
+
+> Ojo en el paso 4: al borrar un elemento, los de su derecha cambian de índice.

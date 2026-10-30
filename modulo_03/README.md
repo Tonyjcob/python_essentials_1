@@ -15,6 +15,7 @@
 | 11 | `11_collatz.py` | 3.2.15 | ☐ |
 | 12 | `12_sombrero.py` | 3.4.6 | ☐ |
 | 13 | `13_beatles.py` | 3.4.11 | ☐ |
+| 14 | `14_sin_repetidos.py` | 3.6.6 | ☐ |
 
 ## 01 · Comparación sin if
 `01_mayor_igual_100.py` · sección 3.1.6
@@ -300,4 +301,23 @@ Paso 5: ['Ringo Starr', 'John Lennon', 'Paul McCartney', 'George Harrison']
 Los Fab 4
 ```
 
-> Ojo en el paso 4: al borrar un elemento, los de su derecha cambian de índice.
+
+
+## 14 · Operaciones con listas: eliminar repeticiones
+`14_sin_repetidos.py` · sección 3.6.6
+
+Partiendo de una lista de enteros con números repetidos, escribe un programa que **elimine todas las repeticiones**: cada número debe aparecer **una sola vez**.
+
+- La lista ya está en el código (no hace falta pedirla por teclado).
+- Sugerencia: crea una **lista nueva** como área de trabajo temporal; no hace falta modificar la original.
+- Herramientas útiles de esta sección: `for`, `in` / `not in`, `append()`.
+- Opcional: amplíalo para que el usuario introduzca los datos.
+
+Salida esperada con la lista del esqueleto `[1, 2, 4, 4, 1, 4, 2, 6, 2, 9]`:
+
+```
+La lista con elementos únicos:
+[1, 2, 4, 6, 9]
+```
+
+> Si usas una lista nueva, acuérdate de que el `print` final muestre **esa** lista (o reasígnala a `my_list`).
